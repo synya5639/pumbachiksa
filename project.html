@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Артём Решетов ищет любовь</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #f9f2f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      padding: 80px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 1s forwards;
+    }
+
+    section:nth-child(even) {
+      animation-delay: 0.3s;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .interview p {
+      margin-bottom: 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-form {
+      text-align: center;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px;
+      margin: 10px auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      padding: 12px 30px;
+      background-color: #ff9a9e;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #f76c6c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #ffe4ec;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Артём Решетов</h1>
+    <p>Ищет свою единственную ❤️</p>
+  </header>
+
+  <div class="container">
+    <section class="interview">
+      <h2>Интервью</h2>
+      <p><strong>Вопрос:</strong> Артём, чем ты увлекаешься?</p>
+      <p><strong>Ответ:</strong> Я люблю заниматься потным анальным сексом, чтобы меня 2 мужика страпонили в жопу</p>
+
+      <p><strong>Вопрос:</strong> Какая девушка тебе нравится?</p>
+      <p><strong>Ответ:</strong> Умная, добрая и с чувством юмора. Чтобы поддерживала и вдохновляла, и была трансом</p>
+
+    
+    </section>
+
+    <section class="photos">
+      <h2>Фото Артёма</h2>
+      <div class="gallery">
+        <img src="photo_2025-05-08_00-32-27.jpg" alt="Фотки этой секси чиксы">
+        <img src="photo_2025-05-08_00-32-33.jpg" alt="">
+        <img src="photo_2025-05-08_00-32-37.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Напиши Артёму</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Твоё имя" required>
+        <input type="email" placeholder="Email или Instagram" required>
+        <textarea rows="4" placeholder="Сообщение для Артёма"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    document.querySelector(".contact-form").addEventListener("submit", function(e) {
+      e.preventDefault(); // остановка формы
+      alert("Спасибо за сообщение! Напиши потному пумбе в тг:@Artemisllll");
+    });
+  </script>
+
+  <footer>
+    <p>Сайт создан XXX</p>
+  </footer>
+</body>
+</html>
